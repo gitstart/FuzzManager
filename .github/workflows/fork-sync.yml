@@ -24,7 +24,7 @@ jobs:
 
       - name: Add upstream remote
         run: |
-          git remote add upstream ${{ github.event.repository.parent.html_url || 'https://github.com/gitstart/FuzzManager.git' }}
+          git remote add upstream ${{ github.event.repository.parent.html_url || 'https://github.com/MozillaSecurity/FuzzManager.git' }}
           git fetch upstream
 
       - name: Sync fork with upstream (fast-forward only)
